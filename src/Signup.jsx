@@ -23,7 +23,7 @@ export function Signup() {
 
   return (
     <div id="signup" className="container">
-      <h1>Signup</h1>
+      <h1 className="text-lg font-bold">SIGNUP</h1>
       <br />
       <ul>
         {errors.map((error) => (
@@ -32,27 +32,35 @@ export function Signup() {
       </ul>
       <form onSubmit={handleSubmit}>
         <div>
-          Name:{" "}
-          <input className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm" name="name" type="text" />
-        </div>
-        <div>
-          Email:{" "}
-          <input className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm" name="email" type="email" />
-        </div>
-        <div>
-          Password:{" "}
           <input
-            className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm"
-            name="password"
-            type="password"
+            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
+            name="name"
+            type="text"
+            placeholder="Enter Name"
           />
         </div>
         <div>
-          Password confirmation:{" "}
           <input
-            className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm"
+            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
+            name="email"
+            type="email"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div>
+          <input
+            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
+            name="password"
+            type="password"
+            placeholder="Enter Password"
+          />
+        </div>
+        <div>
+          <input
+            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
             name="password_confirmation"
             type="password"
+            placeholder="Enter Password Confirmation"
           />
         </div>
         <br />
