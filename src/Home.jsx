@@ -1,28 +1,28 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { ResumeShow } from "./ResumeShow";
+import { StudentShow } from "./StudentShow";
 
 export function Home() {
-  const [resumes, setResumes] = useState([]);
-  const [currentResume, setCurrentResume] = useState({});
+  const [Students, setStudents] = useState([]);
+  const [currentStudent, setCurrentStudent] = useState({});
 
-  const handleIndexResumes = () => {
+  const handleIndexStudents = () => {
     axios.get("http://localhost:3000/students.json").then((response) => {
       console.log(response.data);
-      setResumes(response.data);
+      setStudents(response.data);
     });
   };
 
-  const handleShowResume = (resume) => {
-    setCurrentResume(resume);
-    console.log(resume);
+  const handleShowStudent = (student) => {
+    setCurrentStudent(student);
+    console.log(student);
   };
 
-  useEffect(handleIndexResumes, []);
+  useEffect(handleIndexStudents, []);
 
   return (
     <div>
-      <ResumeShow resume={currentResume} />
+      <StudentShow student={currentStudent} />
     </div>
   );
 }

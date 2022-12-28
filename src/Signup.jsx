@@ -33,7 +33,7 @@ export function Signup() {
       <form onSubmit={handleSubmit}>
         <div>
           <input
-            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
             name="name"
             type="text"
             placeholder="Enter Name"
@@ -41,7 +41,7 @@ export function Signup() {
         </div>
         <div>
           <input
-            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
             name="email"
             type="email"
             placeholder="Enter Email"
@@ -49,7 +49,7 @@ export function Signup() {
         </div>
         <div>
           <input
-            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
             name="password"
             type="password"
             placeholder="Enter Password"
@@ -57,7 +57,7 @@ export function Signup() {
         </div>
         <div>
           <input
-            className="w-2/5 rounded-xl items-center m-1 border-gray-200 p-3 pr-12 text-sm shadow-sm"
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
             name="password_confirmation"
             type="password"
             placeholder="Enter Password Confirmation"
