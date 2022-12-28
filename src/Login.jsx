@@ -38,12 +38,24 @@ export function Login() {
       </ul>
       <form onSubmit={handleSubmit}>
         <div>
-          Email: <input name="email" type="email" />
+          Email:{" "}
+          <input className="w-2/5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" name="email" type="email" />
         </div>
         <div>
-          Password: <input name="password" type="password" />
+          Password:{" "}
+          <input
+            className="w-2/5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
+            name="password"
+            type="password"
+          />
         </div>
-        <button type="submit">Login</button>
+        <br />
+        <button
+          className="ml-3 inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+          type="submit"
+        >
+          Login
+        </button>
       </form>
     </div>
   );

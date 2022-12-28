@@ -22,8 +22,9 @@ export function Signup() {
   };
 
   return (
-    <div id="signup">
+    <div id="signup" className="container">
       <h1>Signup</h1>
+      <br />
       <ul>
         {errors.map((error) => (
           <li key={error}>{error}</li>
@@ -31,18 +32,36 @@ export function Signup() {
       </ul>
       <form onSubmit={handleSubmit}>
         <div>
-          Name: <input name="name" type="text" />
+          Name:{" "}
+          <input className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm" name="name" type="text" />
         </div>
         <div>
-          Email: <input name="email" type="email" />
+          Email:{" "}
+          <input className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm" name="email" type="email" />
         </div>
         <div>
-          Password: <input name="password" type="password" />
+          Password:{" "}
+          <input
+            className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm"
+            name="password"
+            type="password"
+          />
         </div>
         <div>
-          Password confirmation: <input name="password_confirmation" type="password" />
+          Password confirmation:{" "}
+          <input
+            className="w-2/5 rounded-lg border-amber-700	 p-4 pr-12 text-sm shadow-sm"
+            name="password_confirmation"
+            type="password"
+          />
         </div>
-        <button type="submit">Signup</button>
+        <br />
+        <button
+          className="ml-3 inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+          type="submit"
+        >
+          Signup
+        </button>
       </form>
     </div>
   );
