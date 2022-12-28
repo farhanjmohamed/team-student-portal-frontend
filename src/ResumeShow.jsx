@@ -7,6 +7,9 @@ export function ResumeShow(props) {
 
   return (
     <div>
+      <h1>Student information</h1>
+      <p>Name: {props.student.first_name}</p>
+      <p>Url: {props.student.last_name}</p>
       <form onSubmit={handleSubmit}>
         <h1>Student Info:</h1>
         <div>
