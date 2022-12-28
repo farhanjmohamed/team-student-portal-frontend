@@ -1,28 +1,11 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-import { StudentShow } from "./StudentShow";
-
 export function Home() {
-  const [Students, setStudents] = useState([]);
-  const [currentStudent, setCurrentStudent] = useState({});
-
-  const handleIndexStudents = () => {
-    axios.get("http://localhost:3000/students.json").then((response) => {
-      console.log(response.data);
-      setStudents(response.data);
-    });
-  };
-
-  const handleShowStudent = (student) => {
-    setCurrentStudent(student);
-    console.log(student);
-  };
-
-  useEffect(handleIndexStudents, []);
-
   return (
     <div>
-      <StudentShow student={currentStudent} />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ullam tempore reiciendis quaerat, alias
+        consequatur asperiores pariatur, fuga perspiciatis culpa repellendus laborum error vel unde provident dolores?
+        Veritatis, exercitationem distinctio.
+      </p>
     </div>
   );
 }
