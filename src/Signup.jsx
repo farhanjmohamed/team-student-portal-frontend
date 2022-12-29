@@ -22,8 +22,9 @@ export function Signup() {
   };
 
   return (
-    <div id="signup">
-      <h1>Signup</h1>
+    <div id="signup" className="container">
+      <h1 className="text-lg font-bold">SIGNUP</h1>
+      <br />
       <ul>
         {errors.map((error) => (
           <li key={error}>{error}</li>
@@ -31,18 +32,44 @@ export function Signup() {
       </ul>
       <form onSubmit={handleSubmit}>
         <div>
-          Name: <input name="name" type="text" />
+          <input
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
+            name="name"
+            type="text"
+            placeholder="Enter Name"
+          />
         </div>
         <div>
-          Email: <input name="email" type="email" />
+          <input
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
+            name="email"
+            type="email"
+            placeholder="Enter Email"
+          />
         </div>
         <div>
-          Password: <input name="password" type="password" />
+          <input
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
+            name="password"
+            type="password"
+            placeholder="Enter Password"
+          />
         </div>
         <div>
-          Password confirmation: <input name="password_confirmation" type="password" />
+          <input
+            className="outline-sky-500	w-2/5 rounded-xl items-center m-1 border-sky-500 p-3 pr-12 text-sm shadow-sm"
+            name="password_confirmation"
+            type="password"
+            placeholder="Enter Password Confirmation"
+          />
         </div>
-        <button type="submit">Signup</button>
+        <br />
+        <button
+          className="ml-3 inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+          type="submit"
+        >
+          Signup
+        </button>
       </form>
     </div>
   );
