@@ -24,15 +24,7 @@ export function StudentShow() {
   const handleUpdateStudent = (id, params, successCallback) => {
     axios.patch("http://localhost:3000/students/" + id + ".json", params).then((response) => {
       console.log(response.data);
-      setStudent(
-        student.map((student) => {
-          if (student.id === response.data.id) {
-            return response.data;
-          } else {
-            return student;
-          }
-        })
-      );
+      setStudent(response.data);
       successCallback();
       handleClose();
     });
@@ -108,7 +100,9 @@ export function StudentShow() {
         <div>
           Photo: <input name="photo" type="text" />
         </div>
-        <button className="btn btn-primary mt-3" type="submit"></button>
+        <button className="btn btn-primary mt-3" type="submit">
+          Update resume
+        </button>
       </form>
     </div>
   );
