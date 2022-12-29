@@ -9,7 +9,7 @@ export function LogoutLink() {
   };
 
   return (
-    <a href="#" onClick={handleClick}>
+    <a className="text-sky-500 transition hover:text-sky-500/75" href="#" onClick={handleClick}>
       Logout
     </a>
   );
